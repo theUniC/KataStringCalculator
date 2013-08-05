@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phpunit colors="true"
+         strict="true"
+         verbose="true"
+         stopOnError="true"
+         stopOnFailure="true"
+         printerFile="vendor/whatthejeff/nyancat-phpunit-resultprinter/src/NyanCat/PHPUnit/ResultPrinter.php"
+         printerClass="NyanCat\PHPunit\ResultPrinter">
+
+    <testsuites>
+        <testsuite name="KataStringCalculator">
+            <directory>./</directory>
+        </testsuite>
+    </testsuites>
+
+    <listeners>
+        <listener class="\Mockery\Adapter\Phpunit\TestListener" />
+    </listeners>
+
+ </phpunit>
